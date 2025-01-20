@@ -6,11 +6,10 @@ import Navbar from './components/Navbar.vue';
 </script>
 
 <template>
+  <Navbar />
   <header>
-    <img alt="Coffee Cup" class="logo" src="@/assets/coffeecup.svg" width="125" height="125" />
-    
     <div class="nav-wrapper">
-      <Navbar />
+      
     </div>
   </header>
 
