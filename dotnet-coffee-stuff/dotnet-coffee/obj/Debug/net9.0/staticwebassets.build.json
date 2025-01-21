@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "zX8U6hjmqBoO7KjGWCVzqDeKHEa0l+iU1LnMA5BJmBY=",
+  "Source": "dotnet-coffee",
+  "BasePath": "_content/dotnet-coffee",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

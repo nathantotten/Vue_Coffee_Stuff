@@ -1,0 +1,6 @@
+@dotnet_coffee_HostAddress = http://localhost:5142
+
+GET {{dotnet_coffee_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
