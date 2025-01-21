@@ -17,17 +17,17 @@ import { RouterLink } from 'vue-router';
 
 <style scoped>
 .coffee-logo {
-    padding-left: 1rem;
-    transition: filter 0.3s ease;
+    padding: 0.5rem;
+    border-style: none;
+    border-radius: 50%;
+    border-color: #723d46;
+    transition: border 0.05s ease-in-out;
     &:hover {
-        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 1.0));
+      border-style: solid;      
     }
 }
 
 .navbar {
-  background-color: #233d4d;
-  color: #F2FDFF;
-  border-radius: 1rem;
   padding: 1rem;
   display: flex;
   align-items: center;
@@ -41,18 +41,20 @@ import { RouterLink } from 'vue-router';
 }
 
 .nav-list li a {
-  color: #F2FDFF;
+  color: #723d46;
+  background-color: #ffffff;
+  border: #723d46;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 1em;
   text-decoration: none;
   font-weight: bold;
   padding: 1.25rem;
-  border-radius: 10px;
-  opacity: 90%;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.2s ease;
 }
 
 .nav-list li a:hover {
-    background-color: lightgray;
-    color: #000;
-    opacity: 100%;
+    color: #ffffff;
+    background-color: #723d46;
 }
 </style>

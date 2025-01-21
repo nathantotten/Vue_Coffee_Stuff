@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
 import { ref } from 'vue';
-import Navbar from './components/Navbar.vue';
+import Navbar from './components/NavBar.vue';
 
 </script>
 
