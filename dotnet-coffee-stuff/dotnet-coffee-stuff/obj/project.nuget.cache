@@ -1,10 +1,22 @@
 {
   "version": 2,
-  "dgSpecHash": "ukcRRfk3xP0=",
+  "dgSpecHash": "qx0T3C/l3dY=",
   "success": true,
   "projectFilePath": "/Users/nathantotten/Coding_Practice/Vue_Coffee_Stuff/dotnet-coffee-stuff/dotnet-coffee-stuff/dotnet-coffee-stuff.csproj",
   "expectedPackageFiles": [
     "/Users/nathantotten/.nuget/packages/microsoft.aspnetcore.openapi/9.0.0/microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
+    "/Users/nathantotten/.nuget/packages/microsoft.entityframeworkcore/9.0.1/microsoft.entityframeworkcore.9.0.1.nupkg.sha512",
+    "/Users/nathantotten/.nuget/packages/microsoft.entityframeworkcore.abstractions/9.0.1/microsoft.entityframeworkcore.abstractions.9.0.1.nupkg.sha512",
+    "/Users/nathantotten/.nuget/packages/microsoft.entityframeworkcore.analyzers/9.0.1/microsoft.entityframeworkcore.analyzers.9.0.1.nupkg.sha512",
+    "/Users/nathantotten/.nuget/packages/microsoft.entityframeworkcore.inmemory/9.0.1/microsoft.entityframeworkcore.inmemory.9.0.1.nupkg.sha512",
+    "/Users/nathantotten/.nuget/packages/microsoft.extensions.caching.abstractions/9.0.1/microsoft.extensions.caching.abstractions.9.0.1.nupkg.sha512",
+    "/Users/nathantotten/.nuget/packages/microsoft.extensions.caching.memory/9.0.1/microsoft.extensions.caching.memory.9.0.1.nupkg.sha512",
+    "/Users/nathantotten/.nuget/packages/microsoft.extensions.dependencyinjection/9.0.1/microsoft.extensions.dependencyinjection.9.0.1.nupkg.sha512",
+    "/Users/nathantotten/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/9.0.1/microsoft.extensions.dependencyinjection.abstractions.9.0.1.nupkg.sha512",
+    "/Users/nathantotten/.nuget/packages/microsoft.extensions.logging/9.0.1/microsoft.extensions.logging.9.0.1.nupkg.sha512",
+    "/Users/nathantotten/.nuget/packages/microsoft.extensions.logging.abstractions/9.0.1/microsoft.extensions.logging.abstractions.9.0.1.nupkg.sha512",
+    "/Users/nathantotten/.nuget/packages/microsoft.extensions.options/9.0.1/microsoft.extensions.options.9.0.1.nupkg.sha512",
+    "/Users/nathantotten/.nuget/packages/microsoft.extensions.primitives/9.0.1/microsoft.extensions.primitives.9.0.1.nupkg.sha512",
     "/Users/nathantotten/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
   ],
   "logs": []
