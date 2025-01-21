@@ -1,3 +1,4 @@
+using dotnet_coffee.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace dotnet_coffee.Controllers;

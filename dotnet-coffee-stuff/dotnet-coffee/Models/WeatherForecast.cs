@@ -1,4 +1,4 @@
-namespace dotnet_coffee;
+namespace dotnet_coffee.Models;
 
 public class WeatherForecast
 {
