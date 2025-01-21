@@ -17,14 +17,14 @@ import { RouterLink } from 'vue-router';
 
 <style scoped>
 .coffee-logo {
-    padding: 0.5rem;
+    /* padding: 0.5rem;
     border-style: none;
     border-radius: 50%;
     border-color: #723d46;
     transition: border 0.05s ease-in-out;
     &:hover {
       border-style: solid;      
-    }
+    } */
 }
 
 .navbar {

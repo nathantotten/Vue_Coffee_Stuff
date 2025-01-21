@@ -6,10 +6,10 @@ import Navbar from './components/NavBar.vue';
 </script>
 
 <template>
-  <Navbar />
+  
   <header>
     <div class="nav-wrapper">
-      
+      <Navbar />    
     </div>
   </header>
 
@@ -19,5 +19,8 @@ import Navbar from './components/NavBar.vue';
 </template>
 
 <style scoped>
-
+.nav-wrapper {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+}
 </style>
