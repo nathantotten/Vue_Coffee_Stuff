@@ -1,5 +1,9 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router';
+import { useThemeStore } from "@/stores/theme";
+
+const store = useThemeStore();
+
 </script>
 
 <template>
@@ -20,6 +24,10 @@ import { RouterLink } from 'vue-router';
         <li><RouterLink to="/contact">Contact</RouterLink></li>
       </ul>
     </nav>
+    <!-- Theme Switcher testing -->
+    <button type="button" @click="store.switchTheme" class="theme-button">
+      Switch Theme Here
+    </button>
   </div>
 </template>
 
@@ -41,6 +49,7 @@ li a {
   background-clip: border-box;
   border-radius: 15px;
   transition: background-color 0.2s ease-in-out;
+  cursor: pointer; 
 }
 
 /* List item styling */
@@ -86,6 +95,56 @@ li {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.theme-button {
+  margin-left: auto; /* send it alll the way to the right */
+  padding: 0.75rem 1.5rem; 
+  border: none; 
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s ease-in-out; /* neato hover effects */
+}
+
+.dark .theme-button {
+  color: #49475B;
+  background-color: #ffffff;
+}
+
+.light .theme-button {
+  background-color: #49475B; /* Neutral dark for light theme */
+  color: #ffffff;
+}
+
+.theme-button:hover {
+  background-color: #69677C; /* Slightly lighter on hover */
+  transform: scale(1.05); /* Subtle pop effect */
+}
+
+.dark .theme-button:hover {
+  color: #ffffff;
+}
+
+.theme-button:active {
+  transform: scale(0.95); /* Feedback for clicking */
+}
+
+.dark .theme-button:focus {
+  outline: 2px solid #ffffff; /* Visible outline for accessibility */
+  outline-offset: 3px;
+}
+
+.light .theme-button:focus {
+  outline: 2px solid #49475B; /* Visible outline for accessibility */
+  outline-offset: 3px;
 }
 
 </style>
