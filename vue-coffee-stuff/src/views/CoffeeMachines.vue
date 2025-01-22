@@ -1,16 +1,12 @@
-<script lang="ts">
-export default {}
+<script setup lang="ts">
 </script>
 
 <template>
-    <div class="machines">
+    <div class="coffee-machines">
         <h1>Browse our Coffee Machines</h1>
     </div>
 </template>
 
 <style scoped>
-.machines {
-  padding: 1rem;
-  text-align: center;
-}
+
 </style>

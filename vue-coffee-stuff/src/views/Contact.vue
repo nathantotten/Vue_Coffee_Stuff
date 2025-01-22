@@ -21,17 +21,5 @@
 </template>
 
 <style scoped>
-.contact-page {
-    margin-top: 1rem;
-    padding: 1rem;
-    border-radius: 1rem;
-    background-color: white;
-    text-align: center;
-}
-.contact-details-list {
-    margin-top: 2rem;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-}
+
 </style>

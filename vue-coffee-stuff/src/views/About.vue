@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 </script>
 
 <template>
@@ -9,8 +8,5 @@
 </template>
 
 <style scoped>
-.about {
-  padding: 1rem;
-  text-align: center;
-}
+
 </style>

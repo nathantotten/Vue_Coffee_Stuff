@@ -3,24 +3,26 @@ import { RouterView } from 'vue-router'
 import { ref } from 'vue';
 import Navbar from './components/NavBar.vue';
 
+import { useThemeStore } from "@/stores/theme";
+
+const store = useThemeStore();
+
 </script>
 
 <template>
-  
-  <header>
-    <div class="nav-wrapper">
-      <Navbar />    
-    </div>
-  </header>
+  <div>
+    <header>
+      <div class="nav-wrapper">
+        <Navbar />    
+      </div>
+    </header>
 
-  <div class="main-content">
-    <RouterView />
+    <div class="main-content">
+      <RouterView />
+    </div>
   </div>
 </template>
 
 <style scoped>
-.nav-wrapper {
-  background-color: #ffffff;
-  border-radius: 0.5rem;
-}
+
 </style>
