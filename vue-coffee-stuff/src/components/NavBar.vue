@@ -25,8 +25,9 @@ const store = useThemeStore();
       </ul>
     </nav>
     <!-- Theme Switcher testing -->
-    <button type="button" @click="store.switchTheme" class="theme-button">
-      Switch Theme Here
+    <button type="button" @click="store.switchTheme" class="theme-button" aria-label="Switch Theme">
+      Switch Theme : 
+      {{ store.currentTheme }}
     </button>
   </div>
 </template>
@@ -34,7 +35,7 @@ const store = useThemeStore();
 <style scoped>
 /* Logo styling for each mode */
 .light .logo {
-  stroke: #49475B;
+  stroke: black;
 }
 
 .dark .logo {
@@ -59,29 +60,29 @@ li {
 
 /* dark link styling */
 .dark li a {
-  color: #ffffff;
-  border-color: #ffffff;
-  background-color:#49475B;
+  color: var(--dark-accent-bold);
+  border-color: var(--dark-accent-bold);
+  background-color: var(--dark-bg);
 }
 
 /* dark link hover styling */
 .dark li a:hover {
-  background-color: #ffffff;
+  background-color: var(--dark-accent-bold);
   /* border-color: #49475B; */
-  color:#49475B;
+  color: black;
 }
 
 /* light link styling */
 .light li a {
   color: #000;
-  border-color: #49475B;
-  background-color: #ffffff;
+  border-color: var(--racing-green);
+  background-color: var(--primary-color);
 }
 
 /* light link hover styling */
 .light li a:hover {
-  background-color: #49475B;
-  color: #ffffff;
+  background-color: var(--racing-green);
+  color: white;
 }
 
 .nav-list {
@@ -115,22 +116,23 @@ li {
 }
 
 .dark .theme-button {
-  color: #49475B;
-  background-color: #ffffff;
+  color: black;
+  background-color: var(--dark-accent-bold);
 }
 
 .light .theme-button {
-  background-color: #49475B; /* Neutral dark for light theme */
-  color: #ffffff;
+  background-color: var(--racing-green); /* Neutral dark for light theme */
+  color: var(--primary-color);
 }
 
-.theme-button:hover {
-  background-color: #69677C; /* Slightly lighter on hover */
+.light .theme-button:hover {
+  background-color: var(--night-green); /* Slightly lighter on hover */
   transform: scale(1.05); /* Subtle pop effect */
 }
 
 .dark .theme-button:hover {
-  color: #ffffff;
+  background-color: #EB5E28;
+  transform: scale(1.05); /* Subtle pop effect */
 }
 
 .theme-button:active {
@@ -138,12 +140,12 @@ li {
 }
 
 .dark .theme-button:focus {
-  outline: 2px solid #ffffff; /* Visible outline for accessibility */
+  outline: 2px solid var(--dark-accent-bold); /* Visible outline for accessibility */
   outline-offset: 3px;
 }
 
 .light .theme-button:focus {
-  outline: 2px solid #49475B; /* Visible outline for accessibility */
+  outline: 2px solid var(--racing-green); /* Visible outline for accessibility */
   outline-offset: 3px;
 }
 

@@ -1,4 +1,20 @@
+:root {
+   --secondary-color: #49475B;
+   --primary-color: #ffffff;
 
+   /* Dark Mode */
+
+   --dark-bg: #39393A;
+   --dark-logo: #63B0CD;
+   --dark-accent-bold: #F4743B;
+
+   /* Light Mode */
+   --light-bg: #FFFFFF;
+   --light-accent-bold: #BA2D0B;
+   --light-accent-soft: #73BA9B;
+   --racing-green: #003E1F;
+   --night-green: #01110A;
+}
 
 *,
 *::before,
@@ -33,11 +49,11 @@ body {
 }
 
 body.light {
-  color: #49475B;
-  background-color: #ffffff;
+  color: black;
+  background-color: white;
 }
 
 body.dark {
-  color: #ffffff;
-  background-color: #49475B;
+  color: var(--primary-color);
+  background-color: var(--dark-bg);
 }
