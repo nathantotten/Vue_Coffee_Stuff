@@ -1,5 +1,4 @@
 <script setup lang="ts">
-// Any script logic (optional)
 </script>
 
 <template>
@@ -22,7 +21,6 @@
 </template>
 
 <style scoped>
-/* Add styles specific to this view */
 .contact-page {
     margin-top: 1rem;
     padding: 1rem;
