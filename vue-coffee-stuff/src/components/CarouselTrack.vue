@@ -1,8 +1,9 @@
 <script setup lang="ts">
+const props = defineProps<{ position: number }>();
 </script>
 
 <template>
-<div class="track">   
+<div class="track" :style="{ translate: `${props.position}rem` }">   
     <slot>
         
     </slot>
@@ -11,19 +12,20 @@
 
 <style scoped>
 .track {
-    width: 200%;
+    display: flex;
+    max-width: fit-content;
+    width: auto;
     height: 100%;
     position: absolute;
     inset: 0;
     transition: all 1s ease-in;
+
+    &>* {
+        width: auto;
+        height: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
 }
 
-@keyframe scroll {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(100%);
-    }
-}
 </style>

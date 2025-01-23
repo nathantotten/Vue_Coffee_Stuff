@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("dotnet-coffee")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+77b23003c8d74a5f852d064045109339190a4bf6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+94bb1b1aa98e7c0cb052f2e9ec60b1408ef93c62")]
 [assembly: System.Reflection.AssemblyProductAttribute("dotnet-coffee")]
 [assembly: System.Reflection.AssemblyTitleAttribute("dotnet-coffee")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
