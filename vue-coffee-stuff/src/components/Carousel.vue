@@ -35,7 +35,7 @@ const goRight = () => {
 
 <style scoped>
 .container {
-    width: 80rem;
+    width: 75rem;
     height: 15rem;
     position: relative;
     overflow: clip;
