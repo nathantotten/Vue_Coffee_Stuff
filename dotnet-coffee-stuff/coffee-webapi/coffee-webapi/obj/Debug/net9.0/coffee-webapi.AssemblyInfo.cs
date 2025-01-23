@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("coffee-webapi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+713438f107322c6b891ca5215364790272e10b57")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd1242c536a7388b151f23fe1f55f3f5a7e210d0")]
 [assembly: System.Reflection.AssemblyProductAttribute("coffee-webapi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("coffee-webapi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
