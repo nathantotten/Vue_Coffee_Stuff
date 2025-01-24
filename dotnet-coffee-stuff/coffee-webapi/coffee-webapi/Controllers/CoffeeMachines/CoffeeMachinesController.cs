@@ -1,8 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using coffee_webapi.Models;
@@ -40,6 +35,43 @@ namespace coffee_webapi.Controllers.CoffeeMachines
             }
 
             return coffeeMachine;
+        }
+
+        // GET: api/CoffeeMachines/manufacturer/Rancilio
+        [HttpGet("manufacturer/{manufacturer}")]
+        public async Task<ActionResult<IEnumerable<CoffeeMachine>>> GetCoffeeMachineByManufacturer(string manufacturer)
+        {
+            return await _context.CoffeeMachines
+                .Where(m => m.Manufacturer.Contains(manufacturer))
+                .ToListAsync();
+        }
+        
+        // GET: api/CoffeeMachines/model/GS3
+        [HttpGet("model/{model}")]
+        public async Task<ActionResult<IEnumerable<CoffeeMachine>>> GetCoffeeMachineByModel(string model)
+        {
+            return await _context.CoffeeMachines
+                .Where(m => m.Model.Contains(model))
+                .ToListAsync();
+        }
+        
+        // GET: api/CoffeeMachines
+        [HttpGet("filter/")]
+        public async Task<ActionResult<IEnumerable<CoffeeMachine>>> GetCoffeeMachines([FromQuery] string manufacturer, [FromQuery] string model)
+        {
+            var query = _context.CoffeeMachines.AsQueryable();
+
+            if (!string.IsNullOrEmpty(manufacturer))
+            {
+                query = query.Where(m => m.Manufacturer.Contains(manufacturer));
+            }
+
+            if (!string.IsNullOrEmpty(model))
+            {
+                query = query.Where(m => m.Model.Contains(model));
+            }
+
+            return await query.ToListAsync();
         }
 
         // PUT: api/CoffeeMachines/5
