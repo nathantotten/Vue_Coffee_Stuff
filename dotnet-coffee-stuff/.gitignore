@@ -1,0 +1,69 @@
+# Build Folders
+bin/
+obj/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Auto-generated files
+*.vspscc
+*.vssscc
+.vscode/
+
+# Backup & temporary files
+*_ReSharper.*
+*.ncrunchsolution
+*.ncrunchproject
+*_TeamCity.*
+_ReSharper.Caches/
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Files built by visual studio
+.vscode/
+.vscode-test/
+.vscode-test-runner/
+test-results/
+test-output/
+TestResults/
+ipch/
+db/
+lib/
+tools/
+nuget/
+temp/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code backups and workspace storage
+.vscode/.vscode
+.vscode/.vscode-test
+.vscode/test-results
+.vscode/test-output
+
+# Others
+.vscode/ipch/
+.vscode/db/
+.vscode/lib/
+.vscode/tools/
+.vscode/nuget/
+.vscode/temp/
