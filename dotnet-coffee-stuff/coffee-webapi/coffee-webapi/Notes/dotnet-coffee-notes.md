@@ -34,3 +34,7 @@ The generated code:
 - Marks the class with the [ApiController] attribute. This attribute indicates that the controller responds to web API requests.   
 For information about specific behaviors that the attribute enables, see Create web APIs with ASP.NET Core.  
 - Uses DI to inject the database context (TodoContext) into the controller. The database context is used in each of the CRUD methods in the controller.
+
+# Remove shit from repo
+`git rm -r --cached < thing you want gone >`
+
