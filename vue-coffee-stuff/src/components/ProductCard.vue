@@ -31,6 +31,7 @@ defineProps<{
 
 .product-card:hover {
   transform: scale(1.01); /* Enlarges by 1% */
+  cursor: pointer;
 }
 
 .product-image-box {
