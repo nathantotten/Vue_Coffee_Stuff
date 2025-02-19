@@ -22,6 +22,7 @@ const store = useThemeStore();
         <li><RouterLink to="/coffeemachines">Coffee Machines</RouterLink></li>
         <li><RouterLink to="/about">About</RouterLink></li>
         <li><RouterLink to="/contact">Contact</RouterLink></li>
+        <li><RouterLink to="/recipes">Recipes</RouterLink></li>
       </ul>
     </nav>
     <!-- Theme Switcher testing -->
@@ -45,11 +46,12 @@ const store = useThemeStore();
 /* Link styling */
 li a {
   text-decoration: none;
-  border-style: solid;
+  font-weight: bold;
+  border: 2px solid;
   padding: 0.5rem;
   background-clip: border-box;
-  border-radius: 15px;
-  transition: background-color 0.2s ease-in-out;
+  border-radius: 5px;
+  transition: background-color 0.1s ease-in-out;
   cursor: pointer; 
 }
 
@@ -60,14 +62,17 @@ li {
 
 /* dark link styling */
 .dark li a {
-  color: var(--dark-accent-bold);
-  border-color: var(--dark-accent-bold);
+  /* color: var(--dark-accent-bold); */
+  color: white;
+  /* border-color: var(--dark-accent-bold); */
+  border-color: white;
   background-color: var(--dark-bg);
 }
 
 /* dark link hover styling */
 .dark li a:hover {
-  background-color: var(--dark-accent-bold);
+  /* background-color: var(--dark-accent-bold); */
+  background-color: white;
   /* border-color: #49475B; */
   color: black;
 }
@@ -75,13 +80,13 @@ li {
 /* light link styling */
 .light li a {
   color: #000;
-  border-color: var(--racing-green);
+  border-color: black;
   background-color: var(--primary-color);
 }
 
 /* light link hover styling */
 .light li a:hover {
-  background-color: var(--racing-green);
+  background-color: black;
   color: white;
 }
 
@@ -112,26 +117,27 @@ li {
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s ease-in-out; /* neato hover effects */
+  transition: background-color 0.1s, transform 0.1s ease-in-out; /* neato hover effects */
 }
 
 .dark .theme-button {
   color: black;
-  background-color: var(--dark-accent-bold);
+  /* background-color: var(--dark-accent-bold); */
+  background-color: white;
 }
 
 .light .theme-button {
-  background-color: var(--racing-green); /* Neutral dark for light theme */
+  background-color: black; /* Neutral dark for light theme */
   color: var(--primary-color);
 }
 
 .light .theme-button:hover {
-  background-color: var(--night-green); /* Slightly lighter on hover */
+  background-color: rgb(41, 41, 41); /* Slightly lighter on hover */
   transform: scale(1.05); /* Subtle pop effect */
 }
 
 .dark .theme-button:hover {
-  background-color: #EB5E28;
+  background-color: lightgray;
   transform: scale(1.05); /* Subtle pop effect */
 }
 
@@ -140,12 +146,12 @@ li {
 }
 
 .dark .theme-button:focus {
-  outline: 2px solid var(--dark-accent-bold); /* Visible outline for accessibility */
+  outline: 2px solid white; /* Visible outline for accessibility */
   outline-offset: 3px;
 }
 
 .light .theme-button:focus {
-  outline: 2px solid var(--racing-green); /* Visible outline for accessibility */
+  outline: 2px solid black; /* Visible outline for accessibility */
   outline-offset: 3px;
 }
 

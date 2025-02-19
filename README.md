@@ -1,1 +1,3 @@
-This will have stuff in it eventually
+# Running the app with hot reloading
+`pnpm dev`
+
