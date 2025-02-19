@@ -27,8 +27,7 @@ const store = useThemeStore();
     </nav>
     <!-- Theme Switcher testing -->
     <button type="button" @click="store.switchTheme" class="theme-button" aria-label="Switch Theme">
-      Switch Theme : 
-      {{ store.currentTheme }}
+      Switch Theme
     </button>
   </div>
 </template>
